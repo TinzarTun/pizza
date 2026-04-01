@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id('cart_id');
             $table->integer('user_id');
             $table->integer('product_id');
+            $table->string('size')->nullable();
+            $table->string('toppings')->nullable();
+            $table->text('user_note')->nullable();
             $table->integer('quantity')->default(1);
             $table->timestamps();
         });
