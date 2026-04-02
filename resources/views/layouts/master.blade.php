@@ -58,7 +58,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 @yield('body-class')">
     <!-- Navigation -->
     @include('partials.navbar')
 

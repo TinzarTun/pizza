@@ -3,8 +3,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
             <div class="flex items-center gap-2">
-                <div class="w-10 h-10 rounded-full pizza-bg flex items-center justify-center text-white font-bold">P</div>
-                <span class="font-bold text-xl text-gray-900">PizzaHub</span>
+                <div class="w-10 h-10 rounded-full pizza-bg flex items-center justify-center text-white font-bold">
+                    <i class="fa-solid fa-pizza-slice"></i>
+                </div>
+                <span class="font-bold text-xl text-gray-900">Pizzaro</span>
             </div>
             <div class="nav-menu md:flex gap-8">
                 <a href="menu.html" class="text-gray-700 hover:pizza-red">Menu</a>

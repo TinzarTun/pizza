@@ -37,7 +37,7 @@
             <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
                 <div class="flex justify-center mb-4">
                     <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">
-                        <i class="fa-solid fa-pizza-slice"></i>
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Premium Fresh Ingredients</h3>
