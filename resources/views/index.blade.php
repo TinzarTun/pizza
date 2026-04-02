@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PizzaHub - Fresh Pizza Delivery</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         .pizza-red { color: #DC2626; }
         .pizza-bg { background-color: #DC2626; }
@@ -111,21 +112,27 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
                     <div class="flex justify-center mb-4">
-                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">⏱️</div>
+                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Super Fast Delivery</h3>
                     <p class="text-gray-600">30 minutes guaranteed delivery to your location. We track every order in real-time.</p>
                 </div>
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
                     <div class="flex justify-center mb-4">
-                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">🍕</div>
+                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Premium Fresh Ingredients</h3>
                     <p class="text-gray-600">We source the finest quality mozzarella cheese and fresh vegetables daily for perfect taste.</p>
                 </div>
                 <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition">
                     <div class="flex justify-center mb-4">
-                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">🎧</div>
+                        <div class="w-16 h-16 rounded-full pizza-orange-bg text-white flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Dedicated Support</h3>
                     <p class="text-gray-600">24/7 customer support team ready to help with any questions or special requests.</p>
