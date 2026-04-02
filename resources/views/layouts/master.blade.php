@@ -62,8 +62,8 @@
     <!-- Navigation -->
     @include('partials.navbar')
 
-    <!-- Hero Section -->
-
+    <!-- Page Content -->
+    @yield('content')
 
     <!-- Footer -->
     @include('partials.footer')
