@@ -46,12 +46,4 @@ bg-gradient-to-br from-red-600 to-orange-500
         </p>
     </div>
 </div>
-
-<script>
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Login successful!');
-        window.location.href = 'profile.html';
-    });
-</script>
 @endsection
