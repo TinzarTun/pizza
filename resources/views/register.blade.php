@@ -59,7 +59,7 @@ bg-gradient-to-br from-red-600 to-orange-500
 
         <p class="mt-8 text-center text-gray-600">
             Already have an account?
-            <a href="login.html" class="text-red-600 font-bold hover:text-red-700">Sign in</a>
+            <a href="{{ route('login') }}" class="text-red-600 font-bold hover:text-red-700">Sign in</a>
         </p>
     </div>
 </div>
