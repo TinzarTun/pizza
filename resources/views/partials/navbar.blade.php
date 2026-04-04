@@ -16,7 +16,7 @@
             </div>
             <div class="hidden md:flex gap-4 items-center">
                 <a href="{{ route('login') }}" class="text-gray-700 hover:pizza-red font-medium">Login</a>
-                <a href="register.html" class="px-6 py-2 rounded-lg text-white pizza-bg hover:opacity-90 font-medium">Sign Up</a>
+                <a href="{{ route('register') }}" class="px-6 py-2 rounded-lg text-white pizza-bg hover:opacity-90 font-medium">Sign Up</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
