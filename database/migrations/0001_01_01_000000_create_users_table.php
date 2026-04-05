@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('password');
             $table->string('image')->nullable();
             $table->string('phone');
-            $table->string('city');
             $table->text('address');
             $table->enum('role', ['admin', 'customer'])->default('customer');
             $table->rememberToken();
