@@ -7,8 +7,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/register', [AuthController::class, 'register'])->name('register');
-Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/register', [AuthController::class, 'getregister'])->name('register');
+Route::get('/login', [AuthController::class, 'getlogin'])->name('login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware([
