@@ -12,6 +12,7 @@ Route::get('/login', [AuthController::class, 'getlogin'])->name('login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::post('/register', [AuthController::class,'postregister'])->name('register.post');
+Route::post('/login', [AuthController::class,'postlogin'])->name('login.post');
 
 Route::middleware([
     'auth:sanctum',
