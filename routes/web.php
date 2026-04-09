@@ -17,9 +17,9 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/register', [AuthController::class, 'getregister'])->name('register');
-Route::get('/login', [AuthController::class, 'getlogin'])->name('login');
+Route::get('/registerPage', [AuthController::class, 'getregister'])->name('registerPage');
+Route::get('/loginPage', [AuthController::class, 'getlogin'])->name('loginPage');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::post('/register', [AuthController::class,'postregister'])->name('register.post');
-Route::post('/login', [AuthController::class,'postlogin'])->name('login.post');
+// Route::post('/register', [AuthController::class,'postregister'])->name('register.post');
+// Route::post('/login', [AuthController::class,'postlogin'])->name('login.post');
