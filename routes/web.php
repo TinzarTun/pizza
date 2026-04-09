@@ -19,7 +19,7 @@ Route::middleware([
 
 Route::get('/registerPage', [AuthController::class, 'getregister'])->name('registerPage');
 Route::get('/loginPage', [AuthController::class, 'getlogin'])->name('loginPage');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+// Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Route::post('/register', [AuthController::class,'postregister'])->name('register.post');
 // Route::post('/login', [AuthController::class,'postlogin'])->name('login.post');
