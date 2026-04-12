@@ -15,6 +15,10 @@ Route::middleware([
     Route::get('/profile', function () {
         return view('profile');
     })->name('profile');
+
+    Route::get('/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('dashboard');
 });
 
 Route::get('/registerPage', [AuthController::class, 'getregister'])->name('registerPage');
