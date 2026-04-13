@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     // get register
-    public function register()
+    public function getregister()
     {
         return view('register');
     }
