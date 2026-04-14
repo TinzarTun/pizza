@@ -16,7 +16,7 @@ bg-gradient-to-br from-red-600 to-orange-500
             <p class="text-gray-600 mt-2">Welcome back to Pizzaro</p>
         </div>
 
-        <form action="{{ route('login') }}" id="loginForm" class="space-y-4">
+        <form action="{{ route('login') }}" id="loginForm" method="POST" class="space-y-4">
             @csrf
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>

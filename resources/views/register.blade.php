@@ -16,7 +16,7 @@ bg-gradient-to-br from-red-600 to-orange-500
             <p class="text-gray-600 mt-2">Join us for delicious pizza delivery</p>
         </div>
 
-        <form action="{{ route('register') }}" id="registerForm" class="space-y-4">
+        <form action="{{ route('register') }}" id="registerForm" method="POST" class="space-y-4">
             @csrf
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
