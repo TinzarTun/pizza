@@ -23,6 +23,3 @@ Route::middleware([
 
 Route::get('/registerPage', [AuthController::class, 'getregister'])->name('registerPage');
 Route::get('/loginPage', [AuthController::class, 'getlogin'])->name('loginPage');
-
-// Route::post('/registerPage', [AuthController::class,'postregister'])->name('registerPage.post');
-// Route::post('/loginPage', [AuthController::class,'postlogin'])->name('loginPage.post');
