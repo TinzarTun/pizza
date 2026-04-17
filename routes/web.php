@@ -12,14 +12,14 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/profile', function () {
+    Route::get('/my/profile', function () {
         return view('profile');
-    })->name('profile');
+    })->name('my.profile');
 
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('dashboard');
 });
 
-Route::get('/registerPage', [AuthController::class, 'getregister'])->name('registerPage');
-Route::get('/loginPage', [AuthController::class, 'getlogin'])->name('loginPage');
+Route::get('page/register', [AuthController::class, 'getregister'])->name('page.register');
+Route::get('page/login', [AuthController::class, 'getlogin'])->name('page.login');
