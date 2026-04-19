@@ -21,5 +21,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('page/register', [AuthController::class, 'getregister'])->name('page.register');
-Route::get('page/login', [AuthController::class, 'getlogin'])->name('page.login');
+Route::group(['prefix'=> 'page'], function () {
+    Route::get('/register', [AuthController::class, 'getregister'])->name('page.register');
+    Route::get('/login', [AuthController::class, 'getlogin'])->name('page.login');
+});
