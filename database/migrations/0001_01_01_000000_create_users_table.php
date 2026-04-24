@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('phone');
             $table->text('address');
-            $table->enum('role', ['admin', 'customer'])->default('customer');
+            $table->enum('role', ['admin', 'user'])->default('user');
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
