@@ -12,11 +12,6 @@ Route::get('/login', function () {
     return redirect()->route('page.login');
 })->name('login');
 
-Route::group(['prefix'=> 'page'], function () {
-    Route::get('/register', [AuthController::class, 'getregister'])->name('page.register');
-    Route::get('/login', [AuthController::class, 'getlogin'])->name('page.login');
-});
-
 // User routes
 Route::middleware([
     'auth:sanctum',
@@ -42,4 +37,10 @@ Route::middleware([
         return view('admin.dashboard');
     })->name('dashboard');
 
+});
+
+// Login/Register pages
+Route::group(['prefix'=> 'page'], function () {
+    Route::get('/register', [AuthController::class, 'getregister'])->name('page.register');
+    Route::get('/login', [AuthController::class, 'getlogin'])->name('page.login');
 });
