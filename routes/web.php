@@ -17,6 +17,7 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
+     'user',
 ])->group(function () {
 
     Route::get('/my/profile', function () {
